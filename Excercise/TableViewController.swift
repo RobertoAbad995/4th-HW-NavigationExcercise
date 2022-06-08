@@ -25,6 +25,10 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
 
     }
+    
+    func reloadData(){
+        tableView.reloadData()
+    }
 
     // MARK: - Table view data source
 

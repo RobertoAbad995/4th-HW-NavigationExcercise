@@ -17,31 +17,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2N-YA-32m">
-                                <rect key="frame" x="20" y="350" width="374" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2N-YA-32m">
+                                <rect key="frame" x="20" y="139" width="374" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Go to groocery list">
-                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                    <color key="baseBackgroundColor" systemColor="tintColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapFirstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dKM-NL-c9F"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr2-Qi-BSw">
-                                <rect key="frame" x="40" y="88" width="374" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr2-Qi-BSw">
+                                <rect key="frame" x="20" y="98" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a new item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OL9-q5-1q4">
+                                <rect key="frame" x="20" y="239" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qC9-8o-ZI4">
+                                <rect key="frame" x="20" y="296" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add this new item">
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnAddNewItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8cA-p5-sAE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="OL9-q5-1q4" firstAttribute="top" secondItem="d2N-YA-32m" secondAttribute="bottom" constant="69" id="1AU-wy-18t"/>
                             <constraint firstItem="d2N-YA-32m" firstAttribute="top" secondItem="Cr2-Qi-BSw" secondAttribute="bottom" constant="306" id="3jn-6D-hAB"/>
                             <constraint firstItem="Cr2-Qi-BSw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9Gs-5l-QnY"/>
                             <constraint firstItem="Cr2-Qi-BSw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="AeS-sK-rWg"/>
                             <constraint firstItem="d2N-YA-32m" firstAttribute="trailing" secondItem="Cr2-Qi-BSw" secondAttribute="trailing" id="AfK-Nm-Dvx"/>
+                            <constraint firstItem="qC9-8o-ZI4" firstAttribute="top" secondItem="OL9-q5-1q4" secondAttribute="bottom" constant="23" id="Euj-1p-6VM"/>
+                            <constraint firstItem="d2N-YA-32m" firstAttribute="top" secondItem="Cr2-Qi-BSw" secondAttribute="bottom" constant="20" id="GRC-VU-0Zw"/>
+                            <constraint firstItem="OL9-q5-1q4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Kjq-vo-i49"/>
+                            <constraint firstItem="qC9-8o-ZI4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MF5-oQ-QBc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qC9-8o-ZI4" secondAttribute="trailing" constant="20" id="Qil-IG-TEZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OL9-q5-1q4" secondAttribute="trailing" constant="20" id="ZDB-rb-E9N"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cr2-Qi-BSw" secondAttribute="trailing" constant="20" id="hGA-z5-5iJ"/>
+                            <constraint firstItem="qC9-8o-ZI4" firstAttribute="top" secondItem="OL9-q5-1q4" secondAttribute="bottom" constant="23" id="iGV-NV-Ca5"/>
                             <constraint firstItem="d2N-YA-32m" firstAttribute="leading" secondItem="Cr2-Qi-BSw" secondAttribute="leading" id="tJV-kU-71x"/>
                         </constraints>
                     </view>
@@ -51,6 +74,7 @@
                     <navigationItem key="navigationItem" id="5Hg-U8-93u"/>
                     <connections>
                         <outlet property="displayLabel" destination="Cr2-Qi-BSw" id="viB-g2-EM7"/>
+                        <outlet property="txtNewItem" destination="OL9-q5-1q4" id="u8f-Ac-tVi"/>
                         <segue destination="uhj-mV-zYS" kind="modal" identifier="detailSegue" id="A1c-8i-CHL"/>
                     </connections>
                 </viewController>
@@ -242,6 +266,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="7Rd-jg-jb2"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jpq-LO-hHl">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -272,8 +297,8 @@
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
