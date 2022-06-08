@@ -53,7 +53,6 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="OL9-q5-1q4" firstAttribute="top" secondItem="d2N-YA-32m" secondAttribute="bottom" constant="69" id="1AU-wy-18t"/>
-                            <constraint firstItem="d2N-YA-32m" firstAttribute="top" secondItem="Cr2-Qi-BSw" secondAttribute="bottom" constant="306" id="3jn-6D-hAB"/>
                             <constraint firstItem="Cr2-Qi-BSw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9Gs-5l-QnY"/>
                             <constraint firstItem="Cr2-Qi-BSw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="AeS-sK-rWg"/>
                             <constraint firstItem="d2N-YA-32m" firstAttribute="trailing" secondItem="Cr2-Qi-BSw" secondAttribute="trailing" id="AfK-Nm-Dvx"/>

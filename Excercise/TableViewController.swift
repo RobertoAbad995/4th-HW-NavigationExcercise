@@ -25,7 +25,7 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
 
     }
-    
+    //reload our table data
     func reloadData(){
         tableView.reloadData()
     }

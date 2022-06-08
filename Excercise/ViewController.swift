@@ -32,6 +32,7 @@ class ViewController: UIViewController, DataEnteredDelegate {
         displayLabel.text = "Item selected was: " + info
     }
     
+    
     @IBAction func btnAddNewItem(_ sender: Any) {
         
         if let txt = txtNewItem.text {
