@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>let target: Int = 6
+let num: [Int] = [1,5,6,3,4,8,6,5,]
+
+if num.count &lt; 2{
+    print("Must be at least two numbers in the num array.")
+}
+else{
+    var auxSum = 0
+    var indexNum : [Int] = []
+    var index: Int = 0
+    var stringResult: String = ""
+
+for i in num {
+    
+    if (auxSum + i) &lt;= target{
+        
+        auxSum += auxSum + i
+        indexNum.append(index)
+    }
+    
+    index = index + 1
+}
+
+for i in indexNum{
+    stringResult = stringResult + String(i) + ","
+}
+
+
+print("Result is " + stringResult)
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 516}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
